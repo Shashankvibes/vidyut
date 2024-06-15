@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <img class="homesvg" src="./home.svg" alt=""><a href="#">Home</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="h12">Nature's Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cart-item">
+                    <td class="item-details">
+                        <img src="./neem.avif" alt="Tree Image">
+                        <span>Tree Name 1</span>
+                    </td>
+                    <td>10.00 INR</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="increase">+</button>
+                        </div>
+                    </td>
+                    <td>10.00 INR</td>
+                </tr>
+                <tr class="cart-item">
+                    <td class="item-details">
+                        <img src="./rubber.avif" alt="Tree Image">
+                        <span>Tree Name 2</span>
+                    </td>
+                    <td>15.00 INR</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="increase">+</button>
+                        </div>
+                    </td>
+                    <td>55.00 INR</td>
+                </tr>
+                <tr class="cart-item">
+                    <td class="item-details">
+                        <img src="./WhatsApp Image 2024-06-14 at 4.11.00 PM (2).jpeg" alt="Tree Image">
+                        <span>Tree Name 3</span>
+                    </td>
+                    <td>45.00 INR</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="increase">+</button>
+                        </div>
+                    </td>
+                    <td>75.00 INR</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="payment">Proceed to Pay</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

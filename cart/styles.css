@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Background color for the main content area */
+}
+
+header {
+    background: linear-gradient(to right, #1a1a2e, #273469, #3c4d6b);
+    ;
+    padding: 20px 0; /* Increased padding for taller navbar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.cart-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; /* Adjusted margin for centered alignment */
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Set background color to white */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are applied correctly */
+    animation: slideInLeft 0.5s ease, fadeIn 0.5s ease;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity button,
+.payment {
+    width: 40px; /* Increased button width */
+    height: 40px; /* Increased button height */
+    font-size: 20px; /* Slightly larger font size */
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 60%; /* Rounded shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quantity button:hover,
+.payment:hover {
+    background-color: #2980b9;
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.quantity button:hover,
+.payment:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.payment {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width */
+    max-width: 200px; /* Limit max width */
+    text-align: center; /* Center text */
+}
+
+.payment:hover {
+    background-color: #2980b9;
+}
+footer {
+    background: linear-gradient(to right, #1a1a2e, #273469, #3c4d6b);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+#h12 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: #333; /* Dark color for text */
+    margin-bottom: 30px;
+    padding-bottom: 10px; /* Space below heading */
+    border-bottom: 2px solid #2980b9; /* Green underline */
+    width: 58%;
+    margin: 0 auto; /* Center horizontally */
+    background-color: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the circle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+
+#h12::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #2980b9; /* Green circle */
+    border-radius: 50%;
+}
+
+#h12 span {
+    position: relative;
+    z-index: 1;
+    background-color: white; /* White background for span */
+    padding: 0 10px;
+}
+
+#h12 span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust position */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2980b9; /* Green underline effect */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s ease;
+    transform-origin: right;
+}
+
+#h12:hover span::after {
+    transform: scaleX(1); /* Show underline on hover */
+    transform-origin: left;
+}
+.homesvg{
+    margin-left: auto;
+}
